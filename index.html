@@ -4,28 +4,8 @@
 	<title>
 		Ordered List
 	</title>
-	<style type="text/css">
-		.nav{
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			background-color: #333333;
-			overflow: hidden;
-		}
-		li{
-			float: left;
-		}
-		li a{
-			padding: 16px;
-			text-decoration: none;
-			color: white;
-			display: block;
-			text-align: center;
-		}
-		li a:hover{
-			background-color: #111111;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 </head>
 <body>
 <!-- <h2>
@@ -51,5 +31,89 @@
 	<li><a href="services.html">Services</a></li>
 	<li><a href="contact.html">Contact</a></li>
 </ul>
+<h2>Back Ground Image Example</h2>
+<div class="back">
+	sfafa
+	<pre >
+a
+b
+b
+b
+b
+b
+b
+b
+b
+b
+b
+b
+</pre>
+
+</div>
+
+<h2>Image Example</h2>
+<p>
+	src- searches the images/ gives the path for image<br>
+	alt- alternate text
+</p>
+<div>
+	<img  src="images/smiley.gif" alt="Smile Emoji"><br>
+	<img style="width: 100%"  src="images/web.jpg" alt="MyImage">
+</div>
+
+<h2>Form Example</h2>
+
+<form method="post" action="#">
+	<label>Date</label>
+	<input type="date" name="date" id="date">
+
+	<label>UserName:</label>
+	<input type="text" min="1" max="50" placeholder="Enter your username." name="user" id="user_name" value="">
+
+	<label>Email</label>
+	<input type="email" placeholder="Enter your email." name="email" id="email">
+	<br>
+	<label>Password</label>
+	<input type="password" placeholder="Enter your password." name="password" id="password">
+
+	<label>Role</label>
+	<select name="role" id="role">
+		<option>--Choose Role--</option>
+		<option value="SuperAdmin">SuperAdmin</option>
+		<option value="Admin">Admin</option>
+		<option value="User">User</option>
+	</select>
+	<br>
+	<label>Gender</label>
+	<label>Male</label>
+	<input type="radio" name="gender" value="male">
+	<label>Female</label>
+	<input type="radio" name="gender" value="female"> <br>
+	<label>Skill </label>
+	<input type="checkbox" name="skill" value="PHP">PHP
+	<input type="checkbox" name="skill" value="HTML">HTML
+	<input type="checkbox" name="skill" value="CSS">CSS
+	<input type="checkbox" name="skill" value="JavaScript">JavaScript
+	<br>
+
+	<label>Remarks</label>
+	<textarea name="remarks" id="remarks" rows="5"></textarea>
+	<br>
+
+	<!-- <input type="submit" value="Submit"> -->
+	<button class="btn" type="submit">POST THE FORM</button>
+</form>
+
+<div class="row">
+	<div class="col-md-6">
+		<h1>Left</h1>
+
+	</div>
+	<div class="col-md-6">
+		<h1>Right</h1>
+	
+	</div>
+</div>
+
 </body>
 </html>
