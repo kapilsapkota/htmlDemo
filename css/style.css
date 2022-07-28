@@ -13,14 +13,24 @@ body{
 }
 .col-md-12{
 	width: 100%
+	float:left;
 }
 .col-md-6{
 	width: 50%;
+	float: left;
 }
-.col-md-4{
+.row .col-md-4{
 	width: 25%;
 }
-
+.text-center{
+	text-align: center;
+}
+.justify{
+	text-align: justify;
+}
+.justify-left{
+	float: left;
+}
 .btn{
 	    background-color: green;
     color: white;
@@ -42,9 +52,9 @@ body{
 		.twohun{
 			height: 200px;
 			 width: 200px;
-		}
+		}	
 		.back{
-			background-image: url("images/web.jpg");
+			background-image: url('../images/web.jpg');
 			color: green;
 			
 		}
