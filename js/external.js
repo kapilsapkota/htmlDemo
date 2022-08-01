@@ -1,7 +1,25 @@
 var a=1;
 	var b=2;
 	var c = a + b;
-	console.log(c)
+	let car = ["Toyota","Mercedes","BMW","fsda"];
+	console.log(car.includes("BMW"))
+
+	//to Get the Person Data
+	function getPersonData(){
+		const person = {
+			name : "YourName",
+			age : 61,
+			gender: "YourGender",
+			weight : 58
+		};
+		document.getElementById("getPerson").innerHTML = 
+	 	"Your name is:<b>" +person.name+ 
+	 	"</b><br> Your age is <b>"+ person.age+
+	 	 "</b> <br> You gender is:<b>" + person.gender +
+	 	 "</b> <br> You weight is: </b>"+ person.weight+"</b>";	
+	}
+
+//Function To Get the Current Date
 	function getDate(){
 		var date = new Date();
 		var par = document.getElementById("current_date");
