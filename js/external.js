@@ -2,8 +2,7 @@ var a=1;
 	var b=2;
 	var c = a + b;
 	let car = ["Toyota","Mercedes","BMW","fsda"];
-	console.log(car.includes("BMW"))
-
+	
 	//to Get the Person Data
 	function getPersonData(){
 		const person = {
@@ -39,4 +38,49 @@ var a=1;
 	 	"</b><br> Your UserName is <b>"+ name+
 	 	 "</b> <br> You type password:<b>" + password +
 	 	 "</b> <br> You select role: </b>"+ role+"</b>";
+	 }
+
+	 function displayMessage(){
+	 	var age = document.getElementById("age").value;
+	 	if (age > 18) {
+			var	message = "Eligible for vote";
+	 	}else{
+	 	 		var	message = "Not Eligible for Vote";
+	 	}
+	 	alert(message)
+	 	document.getElementById("message").innerHTML = message;
+	 	
+	 }
+
+	 let day;
+	 switch(new Date().getDay()){
+	 	case 0: 
+	 	day = "Sunday";
+	 	break;
+	 	case 1:
+	 	day = "Monday";
+	 	break;
+	 	case 2: 
+	 	day = "Tuesday";
+	 	break;
+	 	case 3:
+	 	day = "Wednesday";
+	 	break;
+	 	case 4: 
+	 	day = "Thursday";
+	 	break;
+	 	case 5:
+	 	day = "Friday";
+	 	break;
+	 	case 6:
+	 	day = "Saturday";
+	 }
+	 alert("Today is "+ day)
+	 document.getElementById("day").innerHTML = "Today is "+ day;
+
+	 function displayNameFiveTimes(){
+	 	//initiate for loop
+	 	for (var i = 1; i <= 5 ; i++) {
+	 		alert("Loop " + i);	 	
+	 	}
 	 }

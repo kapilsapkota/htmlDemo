@@ -112,7 +112,7 @@ b
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> 
 	</div>
 </div>
-<div class="row">
+<div class="row"  style="clear: right;">
 	<p id="current_date">	</p>
 	<p id="getEmail">	</p>
 	<p id="getPerson">	</p>
@@ -120,7 +120,21 @@ b
 	<button id="displayEmail" onclick="getEmail()">	Click to get Form Data</button>
 
 	<button id="displayPerson" onclick="getPersonData()">Click to get Person Data</button>
+	<button id="printWindow" onclick="window.print()">Click to get Print The Window</button>
 </div>
+
+<div class="row">
+<label>	Enter your age</label>	
+	<input type="number" name="age" id="age" placeholder="Enter your age">
+
+	<button onclick="displayMessage()">Click to check eligibilty</button>
+
+	<button onclick="displayNameFiveTimes()">Click to check for loop</button>
+
+	<p id="message"></p>
+	<p id="day"></p>
+</div>
+
 <script type="text/javascript">
 
 </script>
